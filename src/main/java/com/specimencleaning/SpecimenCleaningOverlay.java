@@ -27,7 +27,6 @@ package com.specimencleaning;
 import java.awt.Dimension;
 import java.awt.Graphics2D;
 import javax.inject.Inject;
-import net.runelite.client.ui.overlay.OverlayLayer;
 import net.runelite.client.ui.overlay.OverlayPanel;
 import net.runelite.client.ui.overlay.OverlayPosition;
 import net.runelite.client.ui.overlay.components.ComponentOrientation;
@@ -43,7 +42,6 @@ public class SpecimenCleaningOverlay extends OverlayPanel
 	SpecimenCleaningOverlay(SpecimenCleaningPlugin plugin, SpecimenCleaningSession specimenCleaningSession)
 	{
 		setPosition(OverlayPosition.TOP_RIGHT);
-		setLayer(OverlayLayer.ABOVE_SCENE);
 		this.plugin = plugin;
 		this.specimenCleaningSession = specimenCleaningSession;
 	}
